@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proyectofinal</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+  </head>
+
+  <body>
+    <nav class="nav navbar navbar-inverse">
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="<%= users_profiles_path %>">Profile</a></li>
+      <li role="presentation"><a href="<%= new_stiker_path %>">new Sticker</a></li>
+      <li role="presentation"><a href="#">Search for Sticker</a></li>
+      <% if !current_user %>
+              <li><a  href="<%= user_session_path %>">Log in</a></li>
+              <li><a href="<%= new_user_registration_path %>">Sign up</a></li>
+            <% else %>
+              <li><a href="<%= destroy_user_session_path %>" data-method="delete">Log out</a></li>
+            <% end %>
+    </ul>
+  </nav>
+    <%= yield %>
+  </body>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuZrneZnAWOVTYJAvyCRTW_5NwELAGjZM&callback=initMap"
+async defer></script>
+</html>

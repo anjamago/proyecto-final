@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_user_divise: 1
+  id_img: 1
+  name: MyString
+  last_name: MyString
+  nick_name: MyString
+  date_add: 2016-12-17 08:37:46
+  date_upd: 2016-12-17 08:37:46
+
+two:
+  id_user_divise: 1
+  id_img: 1
+  name: MyString
+  last_name: MyString
+  nick_name: MyString
+  date_add: 2016-12-17 08:37:46
+  date_upd: 2016-12-17 08:37:46

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_user_profile: 1
+  id_stiker: 1
+  status: 1
+  date_add: 2016-12-17 08:30:01
+
+two:
+  id_user_profile: 1
+  id_stiker: 1
+  status: 1
+  date_add: 2016-12-17 08:30:01

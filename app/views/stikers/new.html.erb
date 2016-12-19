@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <%= form_for @stiker do |f| %>
+
+      <div class="from-group">
+        <select class="from-cotrol col-md-4" name="mood">
+          <% @mood.each do |m| %>
+            <option value="<%= m.id %>" > <%= m.name %> </option>
+          <% end %>
+        </select>
+      </div>
+    
+      <div id="map" style=" height: 100%;"></div>
+
+    <% end %>
+</div>
